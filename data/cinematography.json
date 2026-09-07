@@ -1,0 +1,74 @@
+{
+    "shot_types": {
+        "Extreme Wide Shot": {
+            "purpose": "Shows a very large environment and places the subject within it.",
+            "use": "Establishing location, isolation, scale."
+        },
+        "Wide Shot": {
+            "purpose": "Shows the subject and surrounding environment.",
+            "use": "Establishing location and character movement."
+        },
+        "Medium Shot": {
+            "purpose": "Shows the character roughly from the waist up.",
+            "use": "Dialogue, body language, character interaction."
+        },
+        "Medium Close-Up": {
+            "purpose": "Frames the character from the chest or shoulders upward.",
+            "use": "Emotion while retaining some context."
+        },
+        "Close-Up": {
+            "purpose": "Focuses closely on a character's face or an important object.",
+            "use": "Emotion, reaction, important details."
+        },
+        "Extreme Close-Up": {
+            "purpose": "Shows a very small detail such as an eye, hand, or object.",
+            "use": "Strong emphasis and tension."
+        },
+        "Over-the-Shoulder Shot": {
+            "purpose": "Shows the subject from behind another character's shoulder.",
+            "use": "Conversations, reactions, perspective."
+        },
+        "Point-of-View Shot": {
+            "purpose": "Shows what a character appears to see.",
+            "use": "Subjective perspective and immersion."
+        }
+    },
+
+    "camera_angles": {
+        "Eye-level": {
+            "purpose": "Shows the subject from a neutral perspective.",
+            "use": "Natural and realistic presentation."
+        },
+        "High Angle": {
+            "purpose": "Camera looks down toward the subject.",
+            "use": "Can communicate vulnerability, weakness, or isolation."
+        },
+        "Low Angle": {
+            "purpose": "Camera looks upward toward the subject.",
+            "use": "Can communicate power, dominance, or importance."
+        },
+        "Dutch Angle": {
+            "purpose": "Camera is tilted away from the horizontal axis.",
+            "use": "Disorientation, tension, instability, or unease."
+        }
+    },
+
+    "camera_movements": {
+        "Static": {
+            "purpose": "Camera remains stationary.",
+            "use": "Stillness, observation, tension."
+        },
+        "Pan": {
+            "purpose": "Camera rotates horizontally from a fixed position.",
+            "use": "Reveal or follow movement."
+        },
+        "Tilt": {
+            "purpose": "Camera rotates vertically from a fixed position.",
+            "use": "Reveal something above or below."
+        },
+        "Tracking": {
+            "purpose": "Camera physically moves with or toward the subject.",
+            "use": "Follow movement and create immersion."
+        }
+    }
+}

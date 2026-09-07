@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #212121;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   MAIN APP
+========================================= */
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #212121;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 0 24px;
+
+  border-bottom: 1px solid #3a3a3a;
+
+  background: #171717;
+}
+
+.logo {
+  font-size: 28px;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header p {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+
+/* =========================================
+   CHAT CONTAINER
+========================================= */
+
+.chat-container {
+  flex: 1;
+
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px;
+
+  overflow-y: auto;
+}
+
+
+/* =========================================
+   WELCOME SCREEN
+========================================= */
+
+.welcome {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.welcome-icon {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.welcome h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.welcome p {
+  max-width: 550px;
+
+  color: #a0a0a0;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.messages {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.message {
+  display: flex;
+  gap: 14px;
+
+  width: 100%;
+}
+
+.message-avatar {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #343434;
+
+  font-size: 18px;
+}
+
+.message-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.message-name {
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+.message-text {
+  color: #dddddd;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  white-space: pre-wrap;
+}
+
+
+/* =========================================
+   USER MESSAGE
+========================================= */
+
+.user-message {
+  background: #2f2f2f;
+
+  padding: 16px;
+
+  border-radius: 12px;
+}
+
+
+/* =========================================
+   ASSISTANT MESSAGE
+========================================= */
+
+.assistant-message {
+  padding: 10px 4px;
+}
+
+
+/* =========================================
+   INPUT AREA
+========================================= */
+
+.input-container {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 15px 20px 20px;
+}
+
+
+/* =========================================
+   INPUT BOX
+========================================= */
+
+.input-box {
+  display: flex;
+
+  align-items: flex-end;
+
+  gap: 10px;
+
+  background: #2f2f2f;
+
+  border: 1px solid #555;
+
+  border-radius: 14px;
+
+  padding: 10px;
+}
+
+.input-box textarea {
+  flex: 1;
+
+  resize: none;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  padding: 8px;
+}
+
+.input-box textarea::placeholder {
+  color: #8e8e8e;
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.input-box button {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 10px 18px;
+
+  background: #ffffff;
+
+  color: #171717;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.input-box button:hover {
+  background: #dddddd;
+}
+
+.input-box button:active {
+  transform: scale(0.97);
+}
+
+
+/* =========================================
+   INPUT NOTE
+========================================= */
+
+.input-note {
+  text-align: center;
+
+  margin-top: 8px;
+
+  font-size: 11px;
+
+  color: #777;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.chat-container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #555;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .header {
+    padding: 0 15px;
+  }
+
+  .chat-container {
+    padding: 20px 12px;
+  }
+
+  .input-container {
+    padding: 10px 12px 15px;
+  }
+
+  .welcome h2 {
+    font-size: 24px;
+  }
+
+  .message {
+    gap: 10px;
+  }
+
+  .user-message {
+    padding: 12px;
+  }
+
+}
